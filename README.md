@@ -18,7 +18,7 @@ FPS = Frames Per Second ,
 ``` 
 
 ##### 2. statusBar 显示 FPS值
-```
+```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
@@ -32,10 +32,8 @@ FPS = Frames Per Second ,
 ``` 
 
 ### 参阅
-[iOS-Core-Animation-Advanced-Techniques](https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques)
-
-[YYFPSLabel](https://github.com/ibireme/YYKit/blob/master/Demo/YYKitDemo/YYFPSLabel.m)
-
+[iOS-Core-Animation-Advanced-Techniques](https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques)    
+[YYFPSLabel](https://github.com/ibireme/YYKit/blob/master/Demo/YYKitDemo/YYFPSLabel.m)   
 [WWFPSIndicator](https://github.com/Tidusww/WWFPSIndicator)
 
 
