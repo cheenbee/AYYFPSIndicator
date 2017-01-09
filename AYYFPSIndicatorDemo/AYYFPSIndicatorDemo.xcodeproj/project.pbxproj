@@ -14,15 +14,13 @@
 		34D03A1B1E1F98B6005993A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A1A1E1F98B6005993A8 /* Assets.xcassets */; };
 		34D03A1E1E1F98B6005993A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A1C1E1F98B6005993A8 /* LaunchScreen.storyboard */; };
 		34D03A2A1E1F9A44005993A8 /* AYYFPSIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D03A291E1F9A44005993A8 /* AYYFPSIndicator.m */; };
-		34D03A351E1FA595005993A8 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A2C1E1FA595005993A8 /* camera.png */; };
-		34D03A361E1FA595005993A8 /* clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A2D1E1FA595005993A8 /* clubs.png */; };
-		34D03A371E1FA595005993A8 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A2E1E1FA595005993A8 /* feed.png */; };
-		34D03A381E1FA595005993A8 /* file-music.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A2F1E1FA595005993A8 /* file-music.png */; };
-		34D03A391E1FA595005993A8 /* file-picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A301E1FA595005993A8 /* file-picture.png */; };
-		34D03A3A1E1FA595005993A8 /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A311E1FA595005993A8 /* headphones.png */; };
-		34D03A3B1E1FA595005993A8 /* pacman.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A321E1FA595005993A8 /* pacman.png */; };
-		34D03A3C1E1FA595005993A8 /* podcast.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A331E1FA595005993A8 /* podcast.png */; };
-		34D03A3D1E1FA595005993A8 /* spades.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A341E1FA595005993A8 /* spades.png */; };
+		34D03A441E235893005993A8 /* cicle_a.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A3E1E235893005993A8 /* cicle_a.jpeg */; };
+		34D03A451E235893005993A8 /* cicle_b.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A3F1E235893005993A8 /* cicle_b.jpeg */; };
+		34D03A461E235893005993A8 /* cicle_c.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A401E235893005993A8 /* cicle_c.jpeg */; };
+		34D03A471E235893005993A8 /* cicle_d.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A411E235893005993A8 /* cicle_d.jpeg */; };
+		34D03A481E235893005993A8 /* cicle_e.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A421E235893005993A8 /* cicle_e.jpeg */; };
+		34D03A491E235893005993A8 /* cicle_f.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 34D03A431E235893005993A8 /* cicle_f.jpeg */; };
+		34D03A4C1E235DD1005993A8 /* AYYSceneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D03A4B1E235DD1005993A8 /* AYYSceneCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,15 +36,14 @@
 		34D03A1F1E1F98B6005993A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D03A281E1F9A44005993A8 /* AYYFPSIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYYFPSIndicator.h; sourceTree = "<group>"; };
 		34D03A291E1F9A44005993A8 /* AYYFPSIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYYFPSIndicator.m; sourceTree = "<group>"; };
-		34D03A2C1E1FA595005993A8 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
-		34D03A2D1E1FA595005993A8 /* clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clubs.png; sourceTree = "<group>"; };
-		34D03A2E1E1FA595005993A8 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
-		34D03A2F1E1FA595005993A8 /* file-music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-music.png"; sourceTree = "<group>"; };
-		34D03A301E1FA595005993A8 /* file-picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-picture.png"; sourceTree = "<group>"; };
-		34D03A311E1FA595005993A8 /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphones.png; sourceTree = "<group>"; };
-		34D03A321E1FA595005993A8 /* pacman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman.png; sourceTree = "<group>"; };
-		34D03A331E1FA595005993A8 /* podcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podcast.png; sourceTree = "<group>"; };
-		34D03A341E1FA595005993A8 /* spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spades.png; sourceTree = "<group>"; };
+		34D03A3E1E235893005993A8 /* cicle_a.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicle_a.jpeg; sourceTree = "<group>"; };
+		34D03A3F1E235893005993A8 /* cicle_b.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicle_b.jpeg; sourceTree = "<group>"; };
+		34D03A401E235893005993A8 /* cicle_c.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicle_c.jpeg; sourceTree = "<group>"; };
+		34D03A411E235893005993A8 /* cicle_d.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicle_d.jpeg; sourceTree = "<group>"; };
+		34D03A421E235893005993A8 /* cicle_e.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicle_e.jpeg; sourceTree = "<group>"; };
+		34D03A431E235893005993A8 /* cicle_f.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicle_f.jpeg; sourceTree = "<group>"; };
+		34D03A4A1E235DD1005993A8 /* AYYSceneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYYSceneCell.h; sourceTree = "<group>"; };
+		34D03A4B1E235DD1005993A8 /* AYYSceneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYYSceneCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +81,8 @@
 				34D03A121E1F98B6005993A8 /* AppDelegate.m */,
 				34D03A141E1F98B6005993A8 /* ViewController.h */,
 				34D03A151E1F98B6005993A8 /* ViewController.m */,
+				34D03A4A1E235DD1005993A8 /* AYYSceneCell.h */,
+				34D03A4B1E235DD1005993A8 /* AYYSceneCell.m */,
 				34D03A171E1F98B6005993A8 /* Main.storyboard */,
 				34D03A1A1E1F98B6005993A8 /* Assets.xcassets */,
 				34D03A1C1E1F98B6005993A8 /* LaunchScreen.storyboard */,
@@ -115,15 +114,12 @@
 		34D03A2B1E1FA595005993A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				34D03A2C1E1FA595005993A8 /* camera.png */,
-				34D03A2D1E1FA595005993A8 /* clubs.png */,
-				34D03A2E1E1FA595005993A8 /* feed.png */,
-				34D03A2F1E1FA595005993A8 /* file-music.png */,
-				34D03A301E1FA595005993A8 /* file-picture.png */,
-				34D03A311E1FA595005993A8 /* headphones.png */,
-				34D03A321E1FA595005993A8 /* pacman.png */,
-				34D03A331E1FA595005993A8 /* podcast.png */,
-				34D03A341E1FA595005993A8 /* spades.png */,
+				34D03A3E1E235893005993A8 /* cicle_a.jpeg */,
+				34D03A3F1E235893005993A8 /* cicle_b.jpeg */,
+				34D03A401E235893005993A8 /* cicle_c.jpeg */,
+				34D03A411E235893005993A8 /* cicle_d.jpeg */,
+				34D03A421E235893005993A8 /* cicle_e.jpeg */,
+				34D03A431E235893005993A8 /* cicle_f.jpeg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -185,18 +181,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D03A361E1FA595005993A8 /* clubs.png in Resources */,
-				34D03A3D1E1FA595005993A8 /* spades.png in Resources */,
-				34D03A3B1E1FA595005993A8 /* pacman.png in Resources */,
+				34D03A441E235893005993A8 /* cicle_a.jpeg in Resources */,
+				34D03A491E235893005993A8 /* cicle_f.jpeg in Resources */,
 				34D03A1E1E1F98B6005993A8 /* LaunchScreen.storyboard in Resources */,
-				34D03A381E1FA595005993A8 /* file-music.png in Resources */,
 				34D03A1B1E1F98B6005993A8 /* Assets.xcassets in Resources */,
-				34D03A391E1FA595005993A8 /* file-picture.png in Resources */,
-				34D03A351E1FA595005993A8 /* camera.png in Resources */,
-				34D03A3C1E1FA595005993A8 /* podcast.png in Resources */,
+				34D03A451E235893005993A8 /* cicle_b.jpeg in Resources */,
+				34D03A481E235893005993A8 /* cicle_e.jpeg in Resources */,
+				34D03A461E235893005993A8 /* cicle_c.jpeg in Resources */,
+				34D03A471E235893005993A8 /* cicle_d.jpeg in Resources */,
 				34D03A191E1F98B6005993A8 /* Main.storyboard in Resources */,
-				34D03A371E1FA595005993A8 /* feed.png in Resources */,
-				34D03A3A1E1FA595005993A8 /* headphones.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D03A4C1E235DD1005993A8 /* AYYSceneCell.m in Sources */,
 				34D03A161E1F98B6005993A8 /* ViewController.m in Sources */,
 				34D03A2A1E1F9A44005993A8 /* AYYFPSIndicator.m in Sources */,
 				34D03A131E1F98B6005993A8 /* AppDelegate.m in Sources */,
@@ -325,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AYYFPSIndicatorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iuu.ayyFPSIndicator.AYYFPSIndicatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AYYFPSIndicatorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iuu.ayyFPSIndicator.AYYFPSIndicatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

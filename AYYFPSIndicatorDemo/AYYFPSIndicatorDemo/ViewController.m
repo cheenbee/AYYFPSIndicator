@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "AYYSceneCell.h"
 
-@interface ViewController ()<UITableViewDataSource>
+static NSString *reuseId = @"AYYSceneCell";
+
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSMutableArray *images;
 @end
 
@@ -21,58 +23,48 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20,
                                                                    self.view.bounds.size.width,
-                                                                   self.view.bounds.size.height)];
+                                                                   self.view.bounds.size.height - 20)];
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
     
-    self.titles = @[].mutableCopy;
     self.images = @[].mutableCopy;
     
-    [self addCell:@"camera" image:@"camera"];
-    [self addCell:@"clubs" image:@"clubs"];
-    [self addCell:@"feed" image:@"feed"];
-    [self addCell:@"file-music" image:@"file-music"];
-    [self addCell:@"headphones" image:@"headphones"];
-    [self addCell:@"pacman" image:@"pacman"];
+    [self addCellWithImage:@"cicle_a.jpeg"];
+    [self addCellWithImage:@"cicle_b.jpeg"];
+    [self addCellWithImage:@"cicle_c.jpeg"];
+    [self addCellWithImage:@"cicle_d.jpeg"];
+    [self addCellWithImage:@"cicle_e.jpeg"];
+    [self addCellWithImage:@"cicle_f.jpeg"];
     
     for (int i = 0; i < 5; i++) {
-        [self.titles addObjectsFromArray:self.titles];
         [self.images addObjectsFromArray:self.images];
     }
 }
 
-- (void)addCell:(NSString *)title image:(NSString *)imageName {
-    [self.titles addObject:title];
+- (void)addCellWithImage:(NSString *)imageName {
     [self.images addObject:[UIImage imageNamed:imageName]];
 }
 
 #pragma mark - UITableViewDataSource
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 48;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _titles.count;
+    return _images.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AYY"];
+    AYYSceneCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"AYY"];
+        cell = [[AYYSceneCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
     }
-    cell.textLabel.text = _titles[indexPath.row];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
-    cell.textLabel.layer.shadowOffset = CGSizeMake(0, 2);
-    cell.textLabel.layer.cornerRadius = 5.0f;
-    cell.textLabel.layer.shadowOpacity = 1;
+
+    cell.sceneImageView.image = _images[indexPath.row];
     
-    cell.imageView.image = _images[indexPath.row];
-    cell.imageView.layer.shadowOffset = CGSizeMake(0, 5);
-    cell.imageView.layer.shadowOpacity = 1;
-    cell.imageView.clipsToBounds = YES;
-    cell.imageView.layer.cornerRadius = 48 / 2;
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [UIScreen mainScreen].bounds.size.height * 0.5;
 }
 
 - (void)didReceiveMemoryWarning {
