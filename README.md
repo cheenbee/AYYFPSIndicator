@@ -1,6 +1,6 @@
 # AYYFPSIndicator
 Simple FPS Indicator
-FPS = Frames Per Second 
+FPS = Frames Per Second ,
 每秒显示帧数 - 帧率测量单位,详情请参阅 [FPS 维基百科](https://zh.wikipedia.org/wiki/帧率)
 ### 使用方法
 请在 DEBUG 模式下使用 FPS 监控
@@ -29,16 +29,14 @@ FPS = Frames Per Second
 #endif
     return YES;
 }
-```
-### 示例
-1. ![Demo1](https://github.com/cheenbee/AYYFPSIndicator/blob/master/FPSDemo1.gif)
-2. ![Demo2](https://github.com/cheenbee/AYYFPSIndicator/blob/master/FPSDemo2.jpg)  
+``` 
 
 ### 参阅
 [iOS-Core-Animation-Advanced-Techniques](https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques)
 
 [YYFPSLabel](https://github.com/ibireme/YYKit/blob/master/Demo/YYKitDemo/YYFPSLabel.m)
 
+[WWFPSIndicator](https://github.com/Tidusww/WWFPSIndicator)
 
 
 
