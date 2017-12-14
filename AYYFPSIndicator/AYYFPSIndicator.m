@@ -10,12 +10,18 @@
 #import <UIKit/UIKit.h>
 
 #define kUIScreenSize [UIScreen mainScreen].bounds.size
+#define kStatusBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define kISiPhoneX (kStatusBarHeight == 20.f ? NO : YES)
+#define kNavigationBarHeight (kStatusBarHeight + 44)
+#define kTabBarHeight (kISiPhoneX ? (49.f+34.f) : 49.f)
+
 #define kFPSLabelNormalWidth 60
 #define kFPSLabelNormalHeight 30
+#define kFPSLabelInStatusBarHeight 20
 #define kFPSLabelInStatusBarWidth 50
-#define kStatusBarHeight 20
-#define kNavigationBarHeight 64
-#define kTabBarHeight 49
+#define kFPSLabelIniPhoneXStatusBarY 28
+
+
 
 @interface AYYFPSIndicator ()
 
@@ -75,8 +81,15 @@
 
 - (void)setupFPSLabel:(UILabel *)fpsLabel indicatorPosition:(AYYFPSIndicatorPosition)position {
     if (position == AYYFPSIndicatorPositionStatusBar) {
-        CGFloat fpsLabelInStatusBarX = (kUIScreenSize.width - kFPSLabelInStatusBarWidth) *0.5 + kFPSLabelInStatusBarWidth;
-        fpsLabel.frame = CGRectMake(fpsLabelInStatusBarX, 0, kFPSLabelInStatusBarWidth, kStatusBarHeight);
+        
+        CGFloat fpsLabelInNormalStatusBarX = (kUIScreenSize.width - kFPSLabelInStatusBarWidth) *0.5 + kFPSLabelInStatusBarWidth;
+        
+        // 和 statusBar 上信号强度显示点左对齐 (- kFPSLabelInStatusBarWidth + 10)
+        CGFloat fpsLabelIniPhoneXStatusBarX = (kUIScreenSize.width - kFPSLabelInStatusBarWidth) - kFPSLabelInStatusBarWidth + 10;
+        CGFloat fpsLabelInStatusBarX = kISiPhoneX ? fpsLabelIniPhoneXStatusBarX : fpsLabelInNormalStatusBarX;
+        CGFloat fpsLabelInStatusBarY = kISiPhoneX ? kFPSLabelIniPhoneXStatusBarY : 0;
+        
+        fpsLabel.frame = CGRectMake(fpsLabelInStatusBarX, fpsLabelInStatusBarY, kFPSLabelInStatusBarWidth, kFPSLabelInStatusBarHeight);
         fpsLabel.backgroundColor = [UIColor clearColor];
         fpsLabel.font = [UIFont boldSystemFontOfSize:12];
         fpsLabel.textAlignment = NSTextAlignmentRight;

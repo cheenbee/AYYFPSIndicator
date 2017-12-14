@@ -11,6 +11,9 @@
 
 static NSString *reuseId = @"AYYSceneCell";
 
+#define kStatusBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define KISiPhoneX (kStatusBarHeight == 20.f ? NO : YES)
+
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *images;
@@ -21,9 +24,9 @@ static NSString *reuseId = @"AYYSceneCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20,
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kStatusBarHeight,
                                                                    self.view.bounds.size.width,
-                                                                   self.view.bounds.size.height - 20)];
+                                                                   self.view.bounds.size.height - kStatusBarHeight)];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
