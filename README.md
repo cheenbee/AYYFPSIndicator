@@ -17,7 +17,7 @@ FPS = Frames Per Second ,
 }
 ``` 
 
-![FPSDemo1](FPSDemo1.gif)
+![FPSDemo1 set up-w300](FPSDemo1.gif)
 
 
 
@@ -35,7 +35,7 @@ FPS = Frames Per Second ,
 }
 ``` 
 
-![FPSDemo2](FPSDemo2.jpg)
+![FPSDemo2 set up-w300](FPSDemo2.jpg)
 
 
 
