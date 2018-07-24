@@ -17,6 +17,10 @@ FPS = Frames Per Second ,
 }
 ``` 
 
+![FPSDemo1](FPSDemo1.gif)
+
+
+
 ##### 2. statusBar 显示 FPS值
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -30,6 +34,10 @@ FPS = Frames Per Second ,
     return YES;
 }
 ``` 
+
+![FPSDemo2](FPSDemo2.jpg)
+
+
 
 ### 参阅
 [iOS-Core-Animation-Advanced-Techniques](https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques)    
